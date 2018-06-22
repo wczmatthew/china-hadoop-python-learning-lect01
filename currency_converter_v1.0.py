@@ -1,8 +1,20 @@
+'''
+    作者：wcz
+    版本：v1.0
+    日期：01/08/2018
+'''
 
+# 汇率
+USD_VS_RMB = 6.77
+
+# 人民币的输入
 rmb_str_value = input('请输入人民币(CNY)金额:')
+
+# 将字符串转换为数字
 rmb_value = eval(rmb_str_value)
-usd_vs_rmb = 6.77
 
-usd_value = rmb_value / usd_vs_rmb
+# 汇率计算
+usd_value = rmb_value / USD_VS_RMB
 
+# 输出结果
 print('美元(USD)金额是:', usd_value)
